@@ -1,0 +1,35 @@
+@import "bourbon";
+@import "neat";
+
+@font-face {
+font-family: AkkuratRegular;
+src: url("fonts/AkkuratRegular.otf") format("opentype");
+}
+
+html, body {
+  font-family: AkkuratRegular, helvetica, sans-serif;
+  height: 100%;
+}
+
+
+
+.main-header {
+  @include outer-container;
+  text-align: center;
+    .main-logo {
+      @include span-columns(12);
+    }
+}
+
+.main-section {
+  @include outer-container;
+  height:inherit;
+    #about,
+    #work,
+    #contact {
+      @include span-columns(12)
+      text-align: center;
+      height: 25%;
+      vertical-align: middle;
+  }
+}
