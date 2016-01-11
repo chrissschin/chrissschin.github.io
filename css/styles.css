@@ -9,6 +9,7 @@ html {
   src: url("fonts/AkkuratRegular.otf") format("opentype"); }
 
 html, body {
+  position: relative;
   font-family: AkkuratRegular, helvetica, sans-serif;
   height: 100%; }
 
@@ -45,10 +46,116 @@ html, body {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
+    margin-bottom: 25px;
+    color: #fffff9;
+    position: relative;
+    display: table;
     text-align: center;
-    height: 25%;
-    vertical-align: middle; }
+    height: 50%; }
     .main-section #about:last-child,
     .main-section #work:last-child,
     .main-section #contact:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 680px) {
+      .main-section #about,
+      .main-section #work,
+      .main-section #contact {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        display: inline-table; }
+        .main-section #about:last-child,
+        .main-section #work:last-child,
+        .main-section #contact:last-child {
+          margin-right: 0; } }
+    .main-section #about .main-section-text,
+    .main-section #work .main-section-text,
+    .main-section #contact .main-section-text {
+      vertical-align: middle;
+      display: table-cell;
+      position: relative; }
+
+#about {
+  background-color: #D2786C; }
+
+#work {
+  background-color: #D2956C; }
+
+#contact {
+  background-color: #44857A; }
+
+#intro {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #intro:last-child {
+    margin-right: 0; }
+
+article {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #44857A;
+  width: 100%; }
+  article::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+.bounce:hover {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom; }
