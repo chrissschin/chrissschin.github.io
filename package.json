@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/chrissschin/chrissschin.github.io#readme",
   "devDependencies": {
+    "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
     "browser-sync": "^2.11.0",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.1",
