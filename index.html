@@ -6,7 +6,7 @@
 
   <title>Christian Solis</title>
 
-  <!-- mystyles -->
+  <!-- my styles -->
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -14,32 +14,15 @@
   <header class="main-header">
     <h1 class="main-logo">Christianms.us</h1>
   </header>
-  <section class='main-section'>
-    <div id="about" class="hvr-grow">
-      <div class="main-section-text">
-        <a href="#"><h4>ABOUT</h4>
-          <img src="images/coffeeicon.png" alt="">
-        </a>
-      </div>
-    </div>
-    <div id="work" class="hvr-grow">
-      <div class="main-section-text">
-      <a href="#">
-        <h4>WORK</h4>
-        <img src="images/work.png" alt="">
-      </a>
-      </div>
-    </div>
-    <div id="contact" class="hvr-grow">
-      <div class="main-section-text">
-      <a href="#">
-        <h4>CONTACT</h4>
-        <img src="images/contact.png" alt="">
-      </a>
-      </div>
-    </div>
-  </section>
 
+  <section ui-view class="main-section ui-view-container"></section>
+
+
+  <!-- javascript -->
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="myApp.js"></script>
 
 </body>
 
