@@ -7,7 +7,7 @@ var browserSync = require('browser-sync').create();
 
 var paths = {
     scss: './scss/*.scss',
-    html: './*.html'
+    html: './*.html',
 };
 
 // Static server + watch scss/html files

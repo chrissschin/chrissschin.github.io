@@ -30,6 +30,23 @@ a {
 .main-section {
   @include outer-container;
   height:50%;
+    .container {
+      height: 100%;
+    }
+    .article-header,
+    .article-img {
+      overflow: hidden;
+      position: relative;
+      width:100%;
+      height: 100%;
+      @include span-columns(12);
+      @include media ($mobile) {
+        @include span-columns(6);
+        h2 {
+            margin-top: 0;
+        }
+      }        
+    }
     #about,
     #work,
     #contact {
@@ -67,7 +84,10 @@ a {
 }
 
 
-// animations
+
+
+
+////////////////////////// animations
 
 
 .hvr-grow {
@@ -90,7 +110,7 @@ a {
 
 .ui-view-container {
   position: relative;
-  height: 100%;
+  height: 50%;
 }
 
 [ui-view].ng-enter, [ui-view].ng-leave {

@@ -43,6 +43,34 @@ a {
     clear: both;
     content: "";
     display: table; }
+  .main-section .container {
+    height: 100%; }
+  .main-section .article-header,
+  .main-section .article-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .main-section .article-header:last-child,
+    .main-section .article-img:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 680px) {
+      .main-section .article-header,
+      .main-section .article-img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .main-section .article-header:last-child,
+        .main-section .article-img:last-child {
+          margin-right: 0; }
+        .main-section .article-header h2,
+        .main-section .article-img h2 {
+          margin-top: 0; } }
   .main-section #about,
   .main-section #work,
   .main-section #contact {
@@ -114,8 +142,7 @@ a {
 
 .ui-view-container {
   position: relative;
-  /*height:50% */
-}
+  height: 50%; }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
