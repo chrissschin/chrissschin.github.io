@@ -54,8 +54,7 @@ a {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
-  overflow: auto; }
+  height: 100%; }
   .main-section::after {
     clear: both;
     content: "";
@@ -109,8 +108,7 @@ a {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    margin-right: 0; }
+    width: 100%; }
     .main-section .container:last-child {
       margin-right: 0; }
     @media screen and (min-width: 680px) {
