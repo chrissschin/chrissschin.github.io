@@ -12,16 +12,25 @@
 </head>
 <body>
   <header class="main-header">
-    <h1 class="main-logo">Christianms.us</h1>
+    <a ui-sref="home">
+    <h1 class="main-logo">
+            <span><img src="images/home_thumb.png" alt=""></span>
+            Christianms.us
+    </h1>
+    </a>
+
   </header>
 
   <section ui-view class="main-section ui-view-container"></section>
 
 
   <!-- javascript -->
-  <script src="node_modules/angular/angular.min.js"></script>
+  <!--<script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
-  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.16/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.min.js"></script>
   <script src="myApp.js"></script>
 
 </body>

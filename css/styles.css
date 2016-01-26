@@ -8,6 +8,10 @@ html {
   font-family: AkkuratRegular;
   src: url("fonts/AkkuratRegular.otf") format("opentype"); }
 
+@font-face {
+  font-family: AkkuratLightRegular;
+  src: url("fonts/AkkuratLightRegular.otf") format("opentype"); }
+
 html, body {
   position: relative;
   font-family: AkkuratRegular, helvetica, sans-serif;
@@ -21,6 +25,7 @@ a {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   text-align: center; }
   .main-header::after {
     clear: both;
@@ -33,44 +38,28 @@ a {
     width: 100%; }
     .main-header .main-logo:last-child {
       margin-right: 0; }
+  .main-header span img {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 40px;
+    position: absolute;
+    top: 21px;
+    left: 0; }
+
+.ui-view-container {
+  position: relative;
+  height: 100%; }
 
 .main-section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  height: 50%; }
+  height: 100%;
+  overflow: auto; }
   .main-section::after {
     clear: both;
     content: "";
     display: table; }
-  .main-section .container {
-    height: 100%; }
-  .main-section .article-header,
-  .main-section .article-img {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .main-section .article-header:last-child,
-    .main-section .article-img:last-child {
-      margin-right: 0; }
-    @media screen and (min-width: 680px) {
-      .main-section .article-header,
-      .main-section .article-img {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .main-section .article-header:last-child,
-        .main-section .article-img:last-child {
-          margin-right: 0; }
-        .main-section .article-header h2,
-        .main-section .article-img h2 {
-          margin-top: 0; } }
   .main-section #about,
   .main-section #work,
   .main-section #contact {
@@ -83,7 +72,7 @@ a {
     position: relative;
     display: table;
     text-align: center;
-    height: 100%; }
+    height: 50%; }
     .main-section #about:last-child,
     .main-section #work:last-child,
     .main-section #contact:last-child {
@@ -107,6 +96,48 @@ a {
       vertical-align: middle;
       display: table-cell;
       position: relative; }
+  .main-section .outer {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; }
+    .main-section .outer::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .main-section .container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    .main-section .container:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 680px) {
+      .main-section .container {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        height: 100%; }
+        .main-section .container:last-child {
+          margin-right: 0; } }
+  .main-section .git-content {
+    display: block;
+    background-color: #D2956C;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: white;
+    text-align: left;
+    height: 100%;
+    overflow: auto;
+    font-family: AkkuratLightRegular, helvetica, sans-serif; }
+    .main-section .git-content h2 {
+      text-align: left;
+      text-decoration: underline; }
+    .main-section .git-content h2, .main-section .git-content p {
+      padding-left: 15px;
+      padding-right: 15px; }
 
 #about {
   background-color: #D2786C; }
@@ -139,10 +170,6 @@ a {
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1); }
-
-.ui-view-container {
-  position: relative;
-  height: 50%; }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;

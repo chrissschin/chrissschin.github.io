@@ -1,11 +1,16 @@
 @import "bourbon";
 @import "neat";
 
-$mobile: new-breakpoint(min-width 680px);
+$desktop-break: new-breakpoint(min-width 680px);
 
 @font-face {
 font-family: AkkuratRegular;
 src: url("fonts/AkkuratRegular.otf") format("opentype");
+}
+
+@font-face {
+font-family: AkkuratLightRegular;
+src: url("fonts/AkkuratLightRegular.otf") format("opentype");
 }
 
 html, body {
@@ -21,32 +26,30 @@ a {
 
 .main-header {
   @include outer-container;
+  position: relative;
   text-align: center;
     .main-logo {
       @include span-columns(12);
     }
+    span img {
+        border: 3px solid black;
+        border-radius: 5px;
+        width: 40px;
+        position: absolute;
+        top:21px;
+        left:0;
+    }
+}
+
+.ui-view-container {
+  position: relative;
+  height: 100%;
 }
 
 .main-section {
   @include outer-container;
-  height:50%;
-    .container {
-      height: 100%;
-    }
-    .article-header,
-    .article-img {
-      overflow: hidden;
-      position: relative;
-      width:100%;
-      height: 100%;
-      @include span-columns(12);
-      @include media ($mobile) {
-        @include span-columns(6);
-        h2 {
-            margin-top: 0;
-        }
-      }        
-    }
+  height:100%;
+  overflow: auto;
     #about,
     #work,
     #contact {
@@ -56,17 +59,51 @@ a {
       position: relative;
       display: table;
       text-align: center;
-      height: 100%;
-      @include media($mobile) {
+      height: 50%;
+      @include media($desktop-break) {
         @include span-columns(4);
-        display: inline-table;
+            display: inline-table;
       }
         .main-section-text {
-          vertical-align: middle;
-          display: table-cell;
-          position: relative;
+            vertical-align: middle;
+            display: table-cell;
+            position: relative;
+      }
+    }
+    .outer {
+        @include outer-container;
+        height: auto;
+    }
+    .container {
+        @include span-columns(12);
+        @include omega();
+        @include media($desktop-break) {
+            @include span-columns(6);
+            height: 100%;
         }
-  }
+    }    
+    .git-content {
+        display: block;
+        background-color:  #D2956C;
+        padding: 5px;
+        margin-bottom: 5px;
+        color: white;
+        text-align: left;
+        height: 100%;
+        overflow: auto;
+        font-family: AkkuratLightRegular, helvetica, sans-serif;
+        h2 {
+            text-align: left;
+            text-decoration: underline;
+            
+        }
+        h2, p {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+    }
+
 }
 
 #about {
@@ -84,9 +121,6 @@ a {
 }
 
 
-
-
-
 ////////////////////////// animations
 
 
@@ -101,6 +135,7 @@ a {
     transition-property: transform;
 }
 
+
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
@@ -108,10 +143,7 @@ a {
 }
 
 
-.ui-view-container {
-  position: relative;
-  height: 50%;
-}
+
 
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
