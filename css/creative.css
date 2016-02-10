@@ -3,6 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@font-face {
+font-family: AkkuratLightRegular;
+src: url("../font-awesome/fonts/AkkuratLightRegular.otf") format("opentype");
+}
+
 
 html,
 body {
@@ -11,7 +16,7 @@ body {
 }
 
 body {
-    font-family: AkkurratLightRegular,'Helvetica Neue',Arial,sans-serif;
+    font-family: AkkuratLightRegular,'Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -184,6 +189,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
 }
 
 header .header-content {
@@ -276,7 +282,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(0,0,0,0.7);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -293,7 +299,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: AkkuratLightRegular, 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
