@@ -12,10 +12,7 @@
   font-style: normal;
 }
 
-@font-face {
-font-family: AkkuratLightRegular;
-src: url("../fonts/AkkuratLightRegular.otf") format("opentype");
-}
+
 
 .fa {
   display: inline-block;
