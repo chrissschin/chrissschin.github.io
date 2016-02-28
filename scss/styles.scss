@@ -1,0 +1,120 @@
+@import "bourbon";
+@import "neat";
+
+$column: 40px;
+$gutter: 44px;
+$grid-columns: 12;
+$max-width: em(960);
+
+$primary-text: #444444;
+$bg-color: #F7F7F7;
+$link-color: #FF9151;
+
+html {
+    
+}
+
+body {
+    margin: 0 auto;
+    font-family: "acumin-pro",Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-size: 14px;
+    color: $link-color;
+    line-height: 17px;
+    display: inline-block;
+    width: 24%;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  
+}
+
+a:hover {
+    color: #FFA874;
+}
+
+.logo {
+    text-indent: -9999em;
+    background: url(../images/speaker.png) no-repeat;
+    background-position: 50% 0;
+    min-height: 85px;
+    margin-bottom: 2.35765%;
+}
+
+.header-container {
+    padding-top: 30px;
+    text-align: center;
+    color: $primary-text;
+    background-color: $bg-color;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.50);
+    .header-content {
+        margin: 0 auto;
+        max-width: 420px;
+        padding: 0 25px;
+        line-height: 20px;
+    }
+    .social-links {
+        text-align: left;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        width: 100%;
+    }    
+}
+
+.works-container {
+    @include outer-container;
+    .works-box {
+        @include span-columns(12);
+        text-align: left;
+        height: 300px;
+        background-color: #CD595A;
+        margin: 0 0 25px 0;
+    }
+}
+
+.section-break {
+    @include outer-container;
+}
+
+
+
+//animation
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: $link-color;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
