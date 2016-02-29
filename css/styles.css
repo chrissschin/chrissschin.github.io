@@ -8,6 +8,11 @@ body {
   margin: 0 auto;
   font-family: "acumin-pro",Arial, Helvetica, sans-serif; }
 
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #444444; }
+
 li {
   font-size: 14px;
   color: #FF9151;
@@ -49,7 +54,9 @@ a:hover {
 .works-container {
   max-width: 60em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 15px;
+  margin-bottom: 25px; }
   .works-container::after {
     clear: both;
     content: "";
@@ -61,19 +68,44 @@ a:hover {
     width: 100%;
     text-align: left;
     height: 300px;
-    background-color: #CD595A;
-    margin: 0 0 25px 0; }
+    background-color: #F7F7F7; }
     .works-container .works-box:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 769px) {
+      .works-container .works-box {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .works-container .works-box:last-child {
+          margin-right: 0; } }
+  .works-container .works-description {
+    padding: 30px; }
+    .works-container .works-description h1 {
+      padding-bottom: 25px; }
+    .works-container .works-description p {
+      font-size: 16px;
+      line-height: 22px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 300; }
+  .works-container .wya {
+    background: url(../images/placehold.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center; }
 
 .section-break {
   max-width: 60em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 25px 15px; }
   .section-break::after {
     clear: both;
     content: "";
     display: table; }
+  .section-break hr {
+    border: 1px solid #E9E9E9;
+    margin-top: 25px; }
 
 .hvr-underline-from-left {
   display: inline-block;
@@ -96,7 +128,7 @@ a:hover {
   right: 100%;
   bottom: 0;
   background: #FF9151;
-  height: 1px;
+  height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.3s;

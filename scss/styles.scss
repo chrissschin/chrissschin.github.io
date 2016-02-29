@@ -19,6 +19,12 @@ body {
     font-family: "acumin-pro",Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $primary-text;
+}
+
 li {
     font-size: 14px;
     color: $link-color;
@@ -68,17 +74,44 @@ a:hover {
 
 .works-container {
     @include outer-container;
+    padding: 0 15px;
+    margin-bottom: 25px;
     .works-box {
         @include span-columns(12);
         text-align: left;
         height: 300px;
-        background-color: #CD595A;
-        margin: 0 0 25px 0;
+        background-color: $bg-color;        
+        @include media(769px) {
+            @include span-columns(6);
+        }              
     }
+    .works-description {
+        padding: 30px;
+        h1 {
+            padding-bottom: 25px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 300;
+        }
+    }
+    .wya {
+        background: url(../images/placehold.jpg);
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+    }    
 }
 
 .section-break {
     @include outer-container;
+    padding: 25px 15px;
+    hr {
+        border: 1px solid #E9E9E9;
+        margin-top: 25px;    
+    }
 }
 
 
@@ -107,7 +140,7 @@ a:hover {
   right: 100%;
   bottom: 0;
   background: $link-color;
-  height: 1px;
+  height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.3s;
