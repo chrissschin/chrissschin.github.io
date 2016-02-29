@@ -31,11 +31,12 @@ a:hover {
   text-indent: -9999em;
   background: url(../images/speaker.png) no-repeat;
   background-position: 50% 0;
-  min-height: 85px;
-  margin-bottom: 2.35765%; }
+  background-size: 66px 82px;
+  min-height: 83px;
+  margin-bottom: 20px; }
 
 .header-container {
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
   color: #444444;
   background-color: #F7F7F7;
@@ -44,9 +45,9 @@ a:hover {
     margin: 0 auto;
     max-width: 420px;
     padding: 0 25px;
-    line-height: 20px; }
+    line-height: 22px; }
   .header-container .social-links {
-    text-align: left;
+    text-align: center;
     padding-top: 25px;
     padding-bottom: 15px;
     width: 100%; }
@@ -88,11 +89,15 @@ a:hover {
       line-height: 22px;
       font-family: Helvetica, Arial, sans-serif;
       font-weight: 300; }
-  .works-container .wya {
-    background: url(../images/placehold.jpg);
+  .works-container .wya,
+  .works-container .ng-forecast {
     background-repeat: none;
     background-size: cover;
     background-position: center; }
+  .works-container .wya {
+    background: url(../images/works-pictures/wya.jpg); }
+  .works-container .ng-forecast {
+    background: url(../images/works-pictures/angularforecast.jpg); }
 
 .section-break {
   max-width: 60em;
