@@ -6,6 +6,8 @@ $gutter: 44px;
 $grid-columns: 12;
 $max-width: em(960);
 
+
+$phone-breakpoint: 769px;
 $primary-text: #444444;
 $bg-color: #F7F7F7;
 $link-color: #FF9151;
@@ -84,7 +86,7 @@ a:hover {
         height: 300px;
         background-color: $bg-color;
 
-        @include media(769px) {
+        @include media($phone-breakpoint) {
             @include span-columns(6);
         }              
     }
@@ -114,13 +116,29 @@ a:hover {
     }    
 }
 
+.hide {
+    display:none;
+}
+
 .section-break {
     @include outer-container;
     padding: 25px 15px;
+    // @include media($phone-breakpoint) {
+    //     .proj-header {
+    //         text-align: center;
+    //     }
+    // }
+    .section-header {
+        text-align: center;
+    }
     hr {
         border: 1px solid #E9E9E9;
         margin-top: 25px;    
     }
+}
+
+.tx-rt {
+    text-align: right;
 }
 
 

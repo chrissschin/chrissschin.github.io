@@ -99,6 +99,9 @@ a:hover {
   .works-container .ng-forecast {
     background: url(../images/works-pictures/angularforecast.jpg); }
 
+.hide {
+  display: none; }
+
 .section-break {
   max-width: 60em;
   margin-left: auto;
@@ -108,9 +111,14 @@ a:hover {
     clear: both;
     content: "";
     display: table; }
+  .section-break .section-header {
+    text-align: center; }
   .section-break hr {
     border: 1px solid #E9E9E9;
     margin-top: 25px; }
+
+.tx-rt {
+  text-align: right; }
 
 .hvr-underline-from-left {
   display: inline-block;
