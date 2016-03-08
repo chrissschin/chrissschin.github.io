@@ -65,12 +65,11 @@ a:hover {
     .header-content {
         margin: 0 auto;
         max-width: 420px;
-        padding: 0 25px;
+        padding: 0 25px 25px;
         line-height: 22px;
     }
     .social-links {
         text-align: center;
-        padding-top: 25px;
         padding-bottom: 15px;
         width: 100%;
     }    
@@ -125,6 +124,10 @@ a:hover {
     }    
 }
 
+.last {
+        margin-bottom: 225px;
+}
+
 .hide {
     display:none;
 }
@@ -146,8 +149,28 @@ a:hover {
     }
 }
 
+#footer {
+    display: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: -100px;
+
+
+}
+
+
 .tx-rt {
     text-align: right;
+}
+
+.tx-cntr {
+    text-align: center;
+}
+
+b,
+.org {
+    color: $link-color;
 }
 
 
