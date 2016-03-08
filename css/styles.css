@@ -78,6 +78,10 @@ a:hover {
       -o-transition: all 0.2s; }
     .works-container .works-box h1:hover {
       color: #FF9151; }
+    .works-container .works-box .code-link {
+      margin-top: 20px;
+      display: inline-block;
+      color: #FF9151; }
     @media screen and (min-width: 769px) {
       .works-container .works-box {
         float: left;
@@ -104,6 +108,9 @@ a:hover {
     background: url(../images/works-pictures/wya.jpg); }
   .works-container .ng-forecast {
     background: url(../images/works-pictures/angularforecast.jpg); }
+  .works-container .indus {
+    background: url(../images/works-pictures/industry.jpg);
+    background-position: center; }
 
 .last {
   margin-bottom: 225px; }

@@ -93,6 +93,11 @@ a:hover {
         h1:hover {
             color: $link-color;
         }
+        .code-link {
+            margin-top: 20px;
+            display: inline-block;
+            color: $link-color;
+        }       
 
         @include media($phone-breakpoint) {
             @include span-columns(6);
@@ -121,6 +126,10 @@ a:hover {
     }
     .ng-forecast {
        background: url(../images/works-pictures/angularforecast.jpg); 
+    }
+    .indus {
+        background:url(../images/works-pictures/industry.jpg);
+        background-position: center;
     }    
 }
 
