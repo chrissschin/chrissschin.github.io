@@ -72,6 +72,13 @@ a:hover {
     background-color: #F7F7F7; }
     .works-container .works-box:last-child {
       margin-right: 0; }
+    .works-container .works-box h1 {
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s; }
+    .works-container .works-box h1:hover {
+      color: #FF9151; }
     @media screen and (min-width: 769px) {
       .works-container .works-box {
         float: left;
