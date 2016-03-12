@@ -114,6 +114,9 @@ a:hover {
   .works-container .indus {
     background: url(../images/works-pictures/industry.jpg);
     background-position: center; }
+  .works-container .th-lgt {
+    background: url(../images/works-pictures/thelight.jpg);
+    background-position: center; }
 
 .last {
   margin-bottom: 245px; }
