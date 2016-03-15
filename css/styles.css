@@ -4,6 +4,9 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.itl {
+  font-style: italic; }
+
 body {
   margin: 0 auto;
   font-family: "acumin-pro",Arial, Helvetica, sans-serif; }
@@ -48,6 +51,7 @@ a:hover {
   .header-container .social-links {
     text-align: justify;
     padding-bottom: 15px;
+    padding-top: 15px;
     min-width: 100%; }
   .header-container .social-links:after {
     content: '';
@@ -119,7 +123,7 @@ a:hover {
     background-position: center; }
 
 .last {
-  margin-bottom: 245px; }
+  margin-bottom: 350px; }
 
 .hide {
   display: none; }
@@ -149,12 +153,18 @@ a:hover {
 .tx-rt {
   text-align: right; }
 
+.tx-lft {
+  text-align: left; }
+
 .tx-cntr {
   text-align: center; }
 
 b,
 .org {
   color: #FF9151; }
+
+.ln {
+  width: 50%; }
 
 .hvr-underline-from-left {
   display: inline-block;

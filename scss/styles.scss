@@ -14,7 +14,11 @@ $link-color: #FF9151;
 $link-hover: #FFA874;
 
 html {
-    
+
+}
+
+.itl {
+    font-style: italic;
 }
 
 body {
@@ -39,7 +43,7 @@ li {
 a {
     text-decoration: none;
     color: $link-color;
-  
+
 }
 
 a:hover {
@@ -70,13 +74,14 @@ a:hover {
     .social-links {
         text-align: justify;
         padding-bottom: 15px;
+        padding-top: 15px;
         min-width: 100%;
     }
     .social-links:after {
         content: '';
         display: inline-block;
         width: 100%;
-    }    
+    }
 }
 
 .works-container {
@@ -92,7 +97,7 @@ a:hover {
             transition: all 0.2s ;
             -webkit-transition: all 0.2s ;
             -moz-transition: all 0.2s ;
-            -o-transition: all 0.2s ;               
+            -o-transition: all 0.2s ;
         }
         h1:hover {
             color: $link-color;
@@ -101,11 +106,11 @@ a:hover {
             margin-top: 20px;
             display: inline-block;
             color: $link-color;
-        }       
+        }
 
         @include media($phone-breakpoint) {
             @include span-columns(6);
-        }              
+        }
     }
     .works-description {
         padding: 30px;
@@ -129,7 +134,7 @@ a:hover {
        background: url(../images/works-pictures/wya.jpg);
     }
     .ng-forecast {
-       background: url(../images/works-pictures/angularforecast.jpg); 
+       background: url(../images/works-pictures/angularforecast.jpg);
     }
     .indus {
         background:url(../images/works-pictures/industry.jpg);
@@ -138,11 +143,11 @@ a:hover {
     .th-lgt {
         background:url(../images/works-pictures/thelight.jpg);
         background-position: center;
-    }    
+    }
 }
 
 .last {
-        margin-bottom: 245px;
+        margin-bottom: 350px;
 }
 
 .hide {
@@ -162,7 +167,7 @@ a:hover {
     }
     hr {
         border: 1px solid #E9E9E9;
-        margin-top: 25px;    
+        margin-top: 25px;
     }
 }
 
@@ -181,6 +186,10 @@ a:hover {
     text-align: right;
 }
 
+.tx-lft {
+    text-align: left;
+}
+
 .tx-cntr {
     text-align: center;
 }
@@ -190,6 +199,9 @@ b,
     color: $link-color;
 }
 
+.ln {
+    width: 50%;
+}
 
 
 //animation
