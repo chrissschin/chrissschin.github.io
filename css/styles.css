@@ -126,6 +126,9 @@ a:hover {
   .works-container .th-lgt {
     background: url(../images/works-pictures/thelight.jpg);
     background-position: center; }
+  .works-container .tele {
+    background: url(../images/works-pictures/television.jpg);
+    background-position: center; }
 
 .last {
   margin-bottom: 350px; }
