@@ -7,7 +7,20 @@
     font-family: MaisonNeue-Bold;
     src: url('../fonts/MaisonNeue-Bold.ttf');
 }
+i {
+    font-size: 24px;
+}
+i:hover {
+    color: #586EFF;
+}
+.rotate {
+    transform: rotate(90deg);
+    margin-left: -90px;
+    position: absolute;
+    margin-top: 150px;
+    color:rgba(0,0,0,.5);
 
+}
 a {
     text-decoration: none;
     color: #1B1F3B;
@@ -51,6 +64,12 @@ p {
     margin-bottom: 20px;
     letter-spacing: .2em;
 }
+.linky {
+    position: absolute;
+    margin-top: 205px;
+    left: -48px;
+}
+
 .text-right {
     text-align: right;
 }
@@ -91,7 +110,8 @@ p {
 }
 .main-intro-row .intro-text {
     font-size: 24px;
-    line-height: 2.1667em;;
+    line-height: 2.1667em;
+    max-width: 740px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .grey-border {
@@ -228,4 +248,12 @@ p {
     padding: 1em 2em;
     padding-top: 20px;
     margin-left:0;
+  }
+  .show-sm {
+      display: none;
+  }
+  @media screen and (max-width:768px) {
+      .show-sm {
+          display: inline-block;
+      }
   }
