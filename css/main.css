@@ -94,6 +94,10 @@ p {
     margin-top:100px;
     margin-bottom: 100px;
 }
+.main-intro-row-case {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 .blue-btn {
     padding: 25px 40px;
     background: #586EFF;
@@ -104,9 +108,9 @@ p {
 .blue-btn:hover {
     background: #1B1F3B;
     color: white;
-
-
-
+}
+.blu {
+    color: #586EFF;
 }
 .main-intro-row .intro-text {
     font-size: 24px;
@@ -256,4 +260,14 @@ p {
       .show-sm {
           display: inline-block;
       }
+  }
+  .case-study-text {
+      font-size: 18px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .-blk {
+      color: black;
+  }
+  .pd-btm-60 {
+      padding-bottom: 80px;
   }
