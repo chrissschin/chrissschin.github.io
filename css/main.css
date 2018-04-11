@@ -124,6 +124,10 @@ p {
 
 .row-border-btm {
     border-left: 2px solid #CDCDD2;    
+    border-bottom: 2px solid #CDCDD2;     
+}
+.row-border-btm-none {
+    border-left: 2px solid #CDCDD2;    
 }
 .case-intro-cont {
     padding-left: 40px;
