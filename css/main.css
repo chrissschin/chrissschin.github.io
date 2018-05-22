@@ -59,7 +59,13 @@ p {
     line-height: 1.8em;
 }
 .name {
-    color: #CDCDD2;
+    color: #BBBBBF;
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: .2em;
+}
+.name-2 {
+    color: #BBBBBF;
     font-size: 12px;
     margin-bottom: 20px;
     letter-spacing: .2em;
@@ -119,15 +125,15 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .grey-border {
-    border-top: 2px solid #CDCDD2;
+    border-top: 2px solid #BBBBBF;
 }
 
 .row-border-btm {
-    border-left: 2px solid #CDCDD2;    
-    border-bottom: 2px solid #CDCDD2;     
+    border-left: 2px solid #BBBBBF;    
+    border-bottom: 2px solid #BBBBBF;     
 }
 .row-border-btm-none {
-    border-left: 2px solid #CDCDD2;    
+    border-left: 2px solid #BBBBBF;    
 }
 .case-intro-cont {
     padding-left: 40px;
@@ -175,7 +181,7 @@ p {
   }
   .blu-under::before {
     transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-    background: #CDCDD2;
+    background: #BBBBBF;
   }
   .blu-under::after {
     transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
@@ -271,7 +277,11 @@ p {
   }
   .-blk {
       color: black;
+      font-size: 12px;
   }
   .pd-btm-60 {
       padding-bottom: 80px;
+  }
+  .mg-top-5 {
+      margin-top:5px;
   }
