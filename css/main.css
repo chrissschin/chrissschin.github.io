@@ -270,6 +270,12 @@ p {
       .show-sm {
           display: inline-block;
       }
+      .case-intro-cont {
+          margin-top: 50px;
+      }
+      .case-intro-cont-1 {
+        margin-top: 0;
+    }
   }
   .case-study-text {
       font-size: 18px;
