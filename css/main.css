@@ -58,6 +58,9 @@ p {
     font-size: 12px;
     line-height: 1.8em;
 }
+strong{
+    text-decoration: underline;
+}
 .name {
     color: #BBBBBF;
     font-size: 48px;
