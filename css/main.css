@@ -78,6 +78,11 @@ strong{
     margin-top: 205px;
     left: -48px;
 }
+.linky-2 {
+    position: absolute;
+    margin-top: 245px;
+    left: -48px;    
+}
 
 .text-right {
     text-align: right;
