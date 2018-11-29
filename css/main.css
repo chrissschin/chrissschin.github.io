@@ -126,6 +126,9 @@ strong{
 .blu {
     color: #586EFF;
 }
+a.a-underline {
+    text-decoration: underline;
+}
 .main-intro-row .intro-text {
     font-size: 24px;
     line-height: 2.1667em;
