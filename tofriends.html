@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHRISTIAN SOLIS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-md-10">
+                <nav class="navbar navbar-expand-md navbar-light" id="nav-bar">
+                    <a class="navbar-brand" href="http://christianms.us/">
+                        <img src="images/logo.png" class="d-inline-block align-top" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-stretch" id="navbar6">
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link blu-under" href="http://christianms.us/#case-studies">WEB
+                                    DEVELOPMENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link blu-under" href="http://christianms.us/uxui">UX/ UI</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link blu-under" href="http://christianms.us/#aboutme">ABOUT ME</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-1">
+                <p class="rotate">CONNECT -</p>
+                <a href="https://www.linkedin.com/in/christianmsus/" target="_blank">
+                    <i class="fab fa-linkedin linky"></i>
+                </a>
+                <a href="https://github.com/chrissschin" target="_blank">
+                    <i class="fab fa-github-square linky-2"></i>
+                </a>
+            </div>
+        </div> -->
+
+        <div class="row main-intro-row">
+            <div class="col-sm-1">
+
+            </div>
+            <style>
+                
+            </style>
+            <div class="col-sm-11 col-md-7">
+              <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/NUN8ly3UVbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div>
+                <div style="width:45px;height:2px;background-color:#9A3250;top:55px;position:relative;left:90px"></div>
+                    <img style="padding-left:120px;padding-right:25px;padding-top:30px" class="img-fluid" src="images/friends.png" alt="valentines">
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="grey-border">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function () {
+            // Select all links with hashes
+            console.log("hi");
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - 150
+                            }, 800, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>
